@@ -401,3 +401,17 @@ exercises.c:21:3: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 ffae7da
+Sat 13 Aug 2022 10:49:58 PM UTC: 
+ exercises.c | 3 ---
+ 1 file changed, 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘suma’:
+exercises.c:17:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   17 |   scanf("%d",&a);
+      |   ^~~~~~~~~~~~~~
+exercises.c:18:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   18 |   scanf("%d",&b);
+      |   ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cddbff4
