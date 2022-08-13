@@ -16,9 +16,11 @@ void suma(int a, int b, int * c)
   int *suma;
   scanf("%d",&a);
   scanf("%d",&b);
+  
   *suma = a+b ;
     
   c= suma;
+  pritnf("%d",c);
 }
 
 /*
