@@ -20,7 +20,7 @@ void suma(int a, int b, int * c)
   scanf("%d %d",&a , &b);
   suma = a+b ;
     
-  c=&suma;
+  c=suma;
 }
 
 /*
