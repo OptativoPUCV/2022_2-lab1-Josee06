@@ -4,3 +4,43 @@ Sat 13 Aug 2022 08:00:00 PM UTC:
  tests:  0|7
 total_score: 0/70
 0f7860c
+Sat 13 Aug 2022 08:04:01 PM UTC: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘suma’:
+exercises.c:16:7: error: ‘a’ redeclared as different kind of symbol
+   16 |   int a;
+      |       ^
+exercises.c:14:15: note: previous definition of ‘a’ with type ‘int’
+   14 | void suma(int a, int b, int * c)
+      |           ~~~~^
+exercises.c:17:7: error: ‘b’ redeclared as different kind of symbol
+   17 |   int b;
+      |       ^
+exercises.c:14:22: note: previous definition of ‘b’ with type ‘int’
+   14 | void suma(int a, int b, int * c)
+      |                  ~~~~^
+exercises.c:18:8: error: ‘c’ redeclared as different kind of symbol
+   18 |   int *c;
+      |        ^
+exercises.c:14:31: note: previous definition of ‘c’ with type ‘int *’
+   14 | void suma(int a, int b, int * c)
+      |                         ~~~~~~^
+exercises.c:20:19: error: invalid operands to binary & (have ‘int *’ and ‘int’)
+   20 |   scanf("%d %d",&a&b);
+      |                 ~~^
+      |                 |
+      |                 int *
+exercises.c:21:8: error: lvalue required as left operand of assignment
+   21 |   suma = a+b ;
+      |        ^
+exercises.c:23:4: error: assignment to ‘int *’ from incompatible pointer type ‘void (*)(int,  int,  int *)’ [-Werror=incompatible-pointer-types]
+   23 |   c=&suma;
+      |    ^
+exercises.c:18:8: error: variable ‘c’ set but not used [-Werror=unused-but-set-variable]
+   18 |   int *c;
+      |        ^
+cc1: all warnings being treated as errors
+Compilation failed
+02118f0
