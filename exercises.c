@@ -17,10 +17,10 @@ void suma(int a, int b, int * c)
   scanf("%d",&a);
   scanf("%d",&b);
   
-  *suma = a+b ;
+  *suma = *a+*b ;
     
   c= suma;
-  pritnf("%d",c);
+  
 }
 
 /*
@@ -62,7 +62,10 @@ typedef struct {
 } Persona;
 
 
-Persona* crearPersona(char nombre[], char rut[], int edad) {
+Persona* crearPersona(char nombre[], char rut[], int edad) 
+
+{
+  
    return NULL;
 }
 
