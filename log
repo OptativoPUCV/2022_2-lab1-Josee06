@@ -265,3 +265,15 @@ exercises.c:17:3: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 76d3c4b
+Sat 13 Aug 2022 10:44:32 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘suma’:
+exercises.c:17:21: error: invalid operands to binary & (have ‘int *’ and ‘int’)
+   17 |   scanf("%d %d",&a  &b);
+      |                 ~~  ^
+      |                 |
+      |                 int *
+Compilation failed
+c574d49
