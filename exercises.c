@@ -15,7 +15,7 @@ void suma(int a, int b, int * c)
 {
   int a;
   int b;
-  int *c;
+  int c;
   int suma;
   scanf("%d %d",&a , &b);
   suma = a+b ;
