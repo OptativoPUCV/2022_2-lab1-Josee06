@@ -13,9 +13,9 @@ y en c almacena el valor de la suma de a más b.
 
 void suma(int a, int b, int * c) 
 {
-  int suma;
+  int *suma;
   scanf("%d %d",&a , &b);
-  suma = a+b ;
+  *suma = a+b ;
     
   c=suma;
 }
