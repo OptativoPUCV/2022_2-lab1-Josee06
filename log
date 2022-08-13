@@ -575,3 +575,23 @@ exercises.c:20:9: error: ‘suma’ is used uninitialized [-Werror=uninitialized
 cc1: all warnings being treated as errors
 Compilation failed
 176f5c7
+Sat 13 Aug 2022 11:16:11 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘suma’:
+exercises.c:20:10: error: invalid type argument of unary ‘*’ (have ‘int’)
+   20 |   suma = *a+*b ;
+      |          ^~
+exercises.c:20:13: error: invalid type argument of unary ‘*’ (have ‘int’)
+   20 |   suma = *a+*b ;
+      |             ^~
+exercises.c:17:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   17 |   scanf("%d",&a);
+      |   ^~~~~~~~~~~~~~
+exercises.c:18:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   18 |   scanf("%d",&b);
+      |   ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e632f5f
