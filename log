@@ -463,3 +463,20 @@ exercises.c:18:3: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 0b733fb
+Sat 13 Aug 2022 10:52:03 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘suma’:
+exercises.c:19:8: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   19 |   suma = a+b ;
+      |        ^
+exercises.c:17:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   17 |   scanf("%d",&a);
+      |   ^~~~~~~~~~~~~~
+exercises.c:18:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   18 |   scanf("%d",&b);
+      |   ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+15b5c84
