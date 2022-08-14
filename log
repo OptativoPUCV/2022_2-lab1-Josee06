@@ -699,3 +699,34 @@ exercises.c:18:3: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 3832687
+Sun 14 Aug 2022 11:30:52 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:70:4: error: expected expression before ‘int’
+   70 |   *int persona= (int* ) malloc (sizeof(int));
+      |    ^~~
+exercises.c:71:14: error: expected expression before ‘Persona’
+   71 |   scanf("%c",Persona.nombre);
+      |              ^~~~~~~
+exercises.c:72:14: error: expected expression before ‘Persona’
+   72 |   scanf("%c",Persona.rut);
+      |              ^~~~~~~
+exercises.c:73:14: error: expected expression before ‘Persona’
+   73 |   scanf("%d",Persona.edad);
+      |              ^~~~~~~
+exercises.c: In function ‘crearVector’:
+exercises.c:97:10: error: returning ‘int *’ from a function with incompatible return type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   97 |   return vector;
+      |          ^~~~~~
+exercises.c: In function ‘suma’:
+exercises.c:17:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   17 |   scanf("%d",&a);
+      |   ^~~~~~~~~~~~~~
+exercises.c:18:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   18 |   scanf("%d",&b);
+      |   ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b8694a0
