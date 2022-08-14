@@ -44,7 +44,8 @@ arreglo a y almacena el resultado en *suma.
 Utilice la función sumaN.
 */
 
-void sumaNultimos(int a[], int n, int m, int * suma) {
+void sumaNultimos(int a[], int n, int m, int * suma) 
+{
 
 }
 
@@ -55,7 +56,8 @@ crearPersona(...), la cual crea una nueva persona con
 los datos correspondientes y retorna un puntero al dato 
 recién creado.
 */
-typedef struct {
+typedef struct 
+{
   char nombre[30];
   char rut[11];
   int edad;
@@ -65,6 +67,12 @@ typedef struct {
 Persona* crearPersona(char nombre[], char rut[], int edad) 
 
 {
+  *int persona= (int* ) malloc (sizeof(int));
+  scanf("%c",Persona.nombre);
+  scanf("%c",Persona.rut);
+  scanf("%d",Persona.edad);
+  
+  
   
    return NULL;
 }
@@ -77,13 +85,17 @@ un vector con capacidad `n`, reserva la memoria
 correspondiente para el arreglo con `n` datos 
 inicializados en 0 y luego retorna el vector creado.
 */
-typedef struct {
+typedef struct 
+{
    int * datos; // arreglo dinámico
    int capacidad; // capacidad del arreglo
 } Vector;
 
-Vector * crearVector(int n) {
-   return NULL;
+Vector * crearVector(int n) 
+{
+  *int vector= (int* ) calloc (n,sizeof(int));
+  return vector;
+  return NULL;
 }
 
 /*
