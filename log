@@ -1560,3 +1560,43 @@ exercises.c:44:7: error: ‘sumaN’ defined but not used [-Werror=unused-functi
 cc1: all warnings being treated as errors
 Compilation failed
 8de48be
+Mon 15 Aug 2022 02:15:42 AM UTC: 
+ exercises.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:75:32: error: expected expression before ‘)’ token
+   75 |   Persona *persona =(Persona*)()
+      |                                ^
+exercises.c:79:22: error: ‘persona’ is a pointer; did you mean to use ‘->’?
+   79 |   scanf("%d", persona.edad);
+      |                      ^
+      |                      ->
+exercises.c: In function ‘crearVector’:
+exercises.c:103:28: error: too many arguments to function ‘malloc’
+  103 |   Vector *vector = (int* ) malloc (n,sizeof(int));
+      |                            ^~~~~~
+In file included from test.c:2:
+/nix/store/dwsi3wsqpqm0hpzdm9fsxc7q732p9xwi-glibc-2.34-210-dev/include/stdlib.h:539:14: note: declared here
+  539 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |              ^~~~~~
+In file included from test.c:5:
+exercises.c:103:20: error: initialization of ‘Vector *’ from incompatible pointer type ‘int *’ [-Werror=incompatible-pointer-types]
+  103 |   Vector *vector = (int* ) malloc (n,sizeof(int));
+      |                    ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:117:8: error: ‘j’ undeclared (first use in this function)
+  117 |   for (j=0;j < i ; j++)
+      |        ^
+exercises.c:117:8: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function ‘crearPersona’:
+exercises.c:78:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   78 |   scanf("%c", persona->rut);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+exercises.c:42:7: error: ‘sumaN’ defined but not used [-Werror=unused-function]
+   42 |   int sumaN(int a[], int m)
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e843d13
