@@ -1697,3 +1697,32 @@ exercises.c:80:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 09415d7
+Mon 15 Aug 2022 02:19:54 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:69:20: error: invalid initializer
+   69 |   Persona vector = (Persona*) malloc(sizeof(Persona));
+      |                    ^
+exercises.c:70:13: error: invalid operands to binary == (have ‘Persona’ and ‘void *’)
+   70 |   if(vector == NULL)
+      |             ^~
+exercises.c:73:20: error: invalid type argument of ‘->’ (have ‘Persona’)
+   73 |       strcpy(vector->nombre, nombre);
+      |                    ^~
+exercises.c:74:20: error: invalid type argument of ‘->’ (have ‘Persona’)
+   74 |       strcpy(vector->rut, rut);
+      |                    ^~
+exercises.c:75:13: error: invalid type argument of ‘->’ (have ‘Persona’)
+   75 |       vector->edad = edad;
+      |             ^~
+exercises.c:76:14: error: incompatible types when returning type ‘Persona’ but ‘Persona *’ was expected
+   76 |       return vector;
+      |              ^~~~~~
+exercises.c:80:1: error: control reaches end of non-void function [-Werror=return-type]
+   80 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+b99b63f

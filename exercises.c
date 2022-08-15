@@ -66,10 +66,10 @@ typedef struct
 Persona* crearPersona(char nombre[], char rut[], int edad) 
 
 {
-  Persona vector = (Persona) malloc(sizeof(Persona));
-   if(vector == NULL)
+  Persona vector = (Persona*) malloc(sizeof(Persona));
+  if(vector == NULL)
       exit(EXIT_FAILURE);
-   else{
+  else{
       strcpy(vector->nombre, nombre);
       strcpy(vector->rut, rut);
       vector->edad = edad;
