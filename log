@@ -1662,3 +1662,9 @@ exercises.c:93:20: error: initialization of ‘Vector *’ from incompatible poi
 cc1: all warnings being treated as errors
 Compilation failed
 bc7b7fc
+Mon 15 Aug 2022 02:18:18 AM UTC: 
+ exercises.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+ tests:  2|5
+total_score: 20/70
+2505559
