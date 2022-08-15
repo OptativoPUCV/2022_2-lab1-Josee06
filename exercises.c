@@ -66,7 +66,7 @@ typedef struct
 Persona* crearPersona(char nombre[], char rut[], int edad) 
 
 {
-  Persona vector = (Persona*) malloc(sizeof(Persona));
+  Persona *vector = (Persona*) malloc(sizeof(Persona));
   if(vector == NULL)
       exit(EXIT_FAILURE);
   else
