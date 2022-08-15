@@ -19,14 +19,15 @@ void suma(int a, int b, int * c)
   
   suma = a+b ;
     
-  *c = suma;
+  *c = &suma;
   
 }
 
 /*
 Esta función suma los N primeros números del arreglo a
 */
-int sumaN(int a[], int N) {
+int sumaN(int a[], int N) 
+{
     int i;
     int tot = 0;
 
@@ -93,7 +94,7 @@ typedef struct
 
 Vector * crearVector(int n) 
 {
-  int *vector= (int* ) malloc (n,sizeof(int));
+  Vector *vector= (int* ) malloc (Vector.capacidad,sizeof(int));
   return vector;
   return NULL;
 }
@@ -119,7 +120,8 @@ Ejercicio 6.
 Programe la función int obtenerValor(Vector * v, int i), 
 la cual retorna el valor en la posición i del vector v.
 */
-int obtenerValor(Vector * v, int i) {
+int obtenerValor(Vector * v, int i) 
+{
    return 0;
 }
 
