@@ -11,7 +11,7 @@ Función que recibe 3 parámetros (a, b y c),
 y en c almacena el valor de la suma de a más b.
 */
 
-void suma(int a, int b, int * c) 
+void suma(int a, int b, int *c) 
 {
   int suma;
   scanf("%d",&a);
@@ -19,7 +19,7 @@ void suma(int a, int b, int * c)
   
   suma = a+b ;
     
-  *c = suma;
+  *c = *suma;
   
 }
 
