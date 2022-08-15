@@ -881,3 +881,48 @@ exercises.c:18:3: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 aebe492
+Mon 15 Aug 2022 12:38:26 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:71:22: error: initialization of ‘Persona *’ from incompatible pointer type ‘int *’ [-Werror=incompatible-pointer-types]
+   71 |   Persona *persona = (int* ) malloc (sizeof(int));
+      |                      ^
+exercises.c:72:22: error: ‘persona’ is a pointer; did you mean to use ‘->’?
+   72 |   scanf("%c", persona.nombre);
+      |                      ^
+      |                      ->
+exercises.c:73:22: error: ‘persona’ is a pointer; did you mean to use ‘->’?
+   73 |   scanf("%c", persona.rut);
+      |                      ^
+      |                      ->
+exercises.c:74:22: error: ‘persona’ is a pointer; did you mean to use ‘->’?
+   74 |   scanf("%d", persona.edad);
+      |                      ^
+      |                      ->
+exercises.c:71:12: error: variable ‘persona’ set but not used [-Werror=unused-but-set-variable]
+   71 |   Persona *persona = (int* ) malloc (sizeof(int));
+      |            ^~~~~~~
+exercises.c: In function ‘crearVector’:
+exercises.c:97:28: error: too many arguments to function ‘malloc’
+   97 |   Vector *vector = (int* ) malloc (n,sizeof(int));
+      |                            ^~~~~~
+In file included from test.c:2:
+/nix/store/dwsi3wsqpqm0hpzdm9fsxc7q732p9xwi-glibc-2.34-210-dev/include/stdlib.h:539:14: note: declared here
+  539 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |              ^~~~~~
+In file included from test.c:5:
+exercises.c:97:20: error: initialization of ‘Vector *’ from incompatible pointer type ‘int *’ [-Werror=incompatible-pointer-types]
+   97 |   Vector *vector = (int* ) malloc (n,sizeof(int));
+      |                    ^
+exercises.c: In function ‘suma’:
+exercises.c:17:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   17 |   scanf("%d",&a);
+      |   ^~~~~~~~~~~~~~
+exercises.c:18:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   18 |   scanf("%d",&b);
+      |   ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2046c00
