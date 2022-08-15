@@ -67,10 +67,6 @@ Persona* crearPersona(char nombre[], char rut[], int edad)
 
 {
   Persona *persona =(Persona*)()
-  
-  scanf("%c", persona->nombre);
-  scanf("%c", persona->rut);
-  scanf("%d", persona.edad);
   return persona;
   
   
@@ -108,12 +104,7 @@ void asignarValor(Vector * v, int i, int valor)
 {
 
   
-  for (j=0;j < i ; j++)
-    {
-      
 
-      
-    }
 }
 
 /*
