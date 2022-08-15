@@ -19,7 +19,7 @@ void suma(int a, int b, int * c)
   
   suma = a+b ;
     
-  *c = &suma;
+  *c = suma;
   
 }
 
@@ -94,7 +94,7 @@ typedef struct
 
 Vector * crearVector(int n) 
 {
-  Vector *vector= (int* ) malloc (Vector.capacidad,sizeof(int));
+  Vector *vector = (int* ) malloc (Vector.capacidad,sizeof(int));
   return vector;
   return NULL;
 }
