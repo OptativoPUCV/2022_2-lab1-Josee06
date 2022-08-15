@@ -13,13 +13,8 @@ y en c almacena el valor de la suma de a más b.
 
 void suma(int a, int b, int *c) 
 {
-  int suma;
-  scanf("%d",&a);
-  scanf("%d",&b);
-  
-  suma = a+b ;
     
-  *c = suma;
+  *c = a +b;
   
 }
 
@@ -80,10 +75,11 @@ typedef struct
 Persona* crearPersona(char nombre[], char rut[], int edad) 
 
 {
-  Persona *persona ;
+  Persona *persona =(Persona*)()
+  
   scanf("%c", persona->nombre);
   scanf("%c", persona->rut);
-  scanf("%d", persona->edad);
+  scanf("%d", persona.edad);
   return persona;
   
   
