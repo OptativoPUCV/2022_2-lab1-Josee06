@@ -96,9 +96,22 @@ typedef struct
 
 Vector * crearVector(int n) 
 {
-
-  
-  return NULL;
+  Vector *lista = (Vector *) calloc (n, sizeof(Vector));
+   if(lista == NULL)
+   {
+      exit(EXIT_FAILURE);
+   }
+   else{
+      lista->datos = (int *) calloc(n, sizeof(int));
+      if(lista->datos = NULL){
+         exit(EXIT_FAILURE);
+      }
+      else
+      {
+         lista->capacidad = n;
+         return lista;
+      }
+   }
 }
 
 /*
