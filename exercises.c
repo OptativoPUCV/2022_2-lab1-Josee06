@@ -72,6 +72,7 @@ Persona* crearPersona(char nombre[], char rut[], int edad)
   scanf("%c", persona->nombre);
   scanf("%c", persona->rut);
   scanf("%d", persona->edad);
+  return persona;
   
   
   
@@ -130,7 +131,8 @@ Ejercicio 7.
 Función que suma los vectores `a` y `b` y 
 actualiza el vector `c` con el resultado de la suma.
 */
-void sumaV(Vector * a, Vector * b, Vector * c) {
+void sumaV(Vector * a, Vector * b, Vector * c) 
+{
 
 }
 
@@ -139,6 +141,7 @@ Ejercicio 8.
 Use las operaciones implementadas de vectores para 
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
-void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
+void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
+{
 
 }
