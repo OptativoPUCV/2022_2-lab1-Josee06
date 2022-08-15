@@ -19,7 +19,7 @@ void suma(int a, int b, int *c)
   
   suma = a+b ;
     
-  *c = *suma;
+  *c = suma;
   
 }
 
