@@ -11,7 +11,8 @@ Función que recibe 3 parámetros (a, b y c),
 y en c almacena el valor de la suma de a más b.
 */
 
-void suma(int a, int b, int *c) {
+void suma(int a, int b, int *c) 
+{
   *c = a + b;
 }
 
@@ -39,18 +40,11 @@ Utilice la función sumaN.
 
 void sumaNultimos(int a[], int n, int m, int * suma) 
 {
-  int sumaN(int a[], int m) 
-{
-    int i;
-    int tot = 0;
-
-    for(i = 0; i < m; i++) 
-    {
-      tot += a[i];
-    }
-
-    return tot;
-}
+  int total = sumaN(a,n);
+   for(int i = 0; i < (n - m); i++){
+      total -= a[i];
+   }
+   (*suma) = total;
 
 }
 
