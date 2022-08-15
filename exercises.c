@@ -104,7 +104,7 @@ Vector * crearVector(int n)
   else
   {
     lista->datos = (int *) calloc(n, sizeof(int));
-    if(lista.datos = NULL)
+    if(lista->datos = NULL)
     {
       exit(EXIT_FAILURE);
     }

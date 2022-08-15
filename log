@@ -1798,3 +1798,14 @@ exercises.c:117:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 c320d02
+Mon 15 Aug 2022 02:26:55 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:107:8: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  107 |     if(lista->datos = NULL)
+      |        ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+60ad8dc
