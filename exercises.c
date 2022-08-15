@@ -47,6 +47,18 @@ Utilice la función sumaN.
 
 void sumaNultimos(int a[], int n, int m, int * suma) 
 {
+  int sumaN(int a[], int m) 
+{
+    int i;
+    int tot = 0;
+
+    for(i = 0; i < m; i++) 
+    {
+      tot += a[i];
+    }
+
+    return tot;
+}
 
 }
 
@@ -68,11 +80,11 @@ typedef struct
 Persona* crearPersona(char nombre[], char rut[], int edad) 
 
 {
-  Persona *persona = (Persona* ) malloc (sizeof(Persona));
+  Persona *persona ;
   scanf("%c", persona->nombre);
   scanf("%c", persona->rut);
   scanf("%d", persona->edad);
-  return persona;
+  return *persona;
   
   
   
@@ -109,8 +121,9 @@ void asignarValor(Vector * v, int i, int valor)
 {
 
   
-  for (i=0;i < valor ; i++)
+  for (j=0;j < i ; j++)
     {
+      
 
       
     }
